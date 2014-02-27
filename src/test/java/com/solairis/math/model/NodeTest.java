@@ -15,4 +15,9 @@ public class NodeTest {
 		assertTrue(true);
 	}
 	
+	@Test
+	public void verify_Node_class_exists() {
+		Node node = new Node();
+	}
+	
 }
