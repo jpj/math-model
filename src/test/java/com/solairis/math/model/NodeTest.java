@@ -87,5 +87,30 @@ public class NodeTest {
 		String result = add.toString();
 		assertThat(result, is("(1 + (2 + 3))"));
 	}
+	
+	@Test
+	public void verify_original_examples_toString() {
+		// 1 + 2 * 3 --> (1 + (2 * 3))
+		//
+		//   +
+		//  / \
+		//  1  *
+		//    / \
+		//    2  3
+		Node root = new Node(
+			null,
+			"+",
+			new Node(1, null, null, null),
+			new Node(
+				null,
+				"*",
+				new Node(2, null, null, null),
+				new Node(3, null, null, null)
+			)
+		);
+		
+		String result = root.toString();
+		assertThat(result, is("(1 + (2 * 3))"));
+	}
 
 }

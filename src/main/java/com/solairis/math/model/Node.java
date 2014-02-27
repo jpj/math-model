@@ -41,6 +41,8 @@ public class Node {
 			switch (this.operator) {
 				case "+":
 					return "(" + this.left.toString() + " + " + this.right.toString()+")";
+				case "*":
+					return "(" + this.left.toString() + " * " + this.right.toString()+")";
 			}
 		} else if (this.value != null) {
 			return this.value.toString();
