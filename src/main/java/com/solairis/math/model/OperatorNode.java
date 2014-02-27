@@ -14,15 +14,5 @@ public abstract class OperatorNode implements Node {
 		this.left = left;
 		this.right = right;
 	}
-
-	@Override
-	public String toString() {
-		return null;
-	}
-
-	@Override
-	public Integer calculate() {
-		return null;
-	}
 	
 }
