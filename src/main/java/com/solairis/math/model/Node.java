@@ -4,8 +4,8 @@ package com.solairis.math.model;
  *
  * @author joshjohnson
  */
-public abstract class Node {
+public interface Node {
 
-	public abstract Integer calculate();
+	Integer calculate();
 
 }

@@ -5,7 +5,7 @@ package com.solairis.math.model;
  *
  * @author joshjohnson
  */
-public class ValueNode extends Node {
+public class ValueNode implements Node {
 	
 	private final Integer value;
 

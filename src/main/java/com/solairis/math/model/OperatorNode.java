@@ -5,7 +5,7 @@ package com.solairis.math.model;
  *
  * @author joshjohnson
  */
-public class OperatorNode extends Node {
+public class OperatorNode implements Node {
 	
 	private final String operator;
 	private final Node left;
