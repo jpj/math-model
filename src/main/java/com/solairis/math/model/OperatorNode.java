@@ -19,19 +19,11 @@ public abstract class OperatorNode implements Node {
 
 	@Override
 	public String toString() {
-		switch (this.operator) {
-			case "*":
-				return "(" + this.left.toString() + " * " + this.right.toString() + ")";
-		}
 		return null;
 	}
 
 	@Override
 	public Integer calculate() {
-		switch (this.operator) {
-			case "*":
-				return this.left.calculate() * this.right.calculate();
-		}
 		return null;
 	}
 	
