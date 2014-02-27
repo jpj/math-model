@@ -10,7 +10,6 @@ public class ValueNode extends Node {
 	private final Integer value;
 
 	public ValueNode(Integer value) {
-		super(null, null, null);
 		this.value = value;
 	}
 
