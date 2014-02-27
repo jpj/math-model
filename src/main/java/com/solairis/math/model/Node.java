@@ -4,15 +4,8 @@ package com.solairis.math.model;
  *
  * @author joshjohnson
  */
-public class Node {
+abstract class Node {
 
-	public Integer calculate() {
-		return null;
-	}
-
-	@Override
-	public String toString() {
-		return null;
-	}
+	abstract Integer calculate();
 
 }
