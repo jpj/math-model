@@ -6,13 +6,11 @@ package com.solairis.math.model;
  */
 public class Node {
 
-	protected final Integer value;
 	private final String operator;
 	private final Node left;
 	private final Node right;
 
-	public Node(Integer value, String operator, Node left, Node right) {
-		this.value = value;
+	public Node(String operator, Node left, Node right) {
 		this.operator = operator;
 		this.left = left;
 		this.right = right;

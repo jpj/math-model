@@ -6,9 +6,12 @@ package com.solairis.math.model;
  * @author joshjohnson
  */
 public class ValueNode extends Node {
+	
+	private final Integer value;
 
 	public ValueNode(Integer value) {
-		super(value, null, null, null);
+		super(null, null, null);
+		this.value = value;
 	}
 
 	@Override
