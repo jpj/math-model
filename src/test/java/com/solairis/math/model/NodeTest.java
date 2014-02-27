@@ -37,8 +37,8 @@ public class NodeTest {
 			)
 		);
 		
-		String result = root.toString();
-		assertThat(result, is("(1 + (2 * 3))"));
+		assertThat(root.calculate(), is(7));
+		assertThat(root.toString(), is("(1 + (2 * 3))"));
 	}
 
 }
