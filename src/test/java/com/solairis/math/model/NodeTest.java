@@ -28,12 +28,12 @@ public class NodeTest {
 		Node root = new Node(
 			null,
 			"+",
-			new Node(1, null, null, null),
+			new ValueNode(1),
 			new Node(
 				null,
 				"*",
-				new Node(2, null, null, null),
-				new Node(3, null, null, null)
+				new ValueNode(2),
+				new ValueNode(3)
 			)
 		);
 		
