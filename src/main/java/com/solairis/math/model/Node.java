@@ -17,31 +17,24 @@ public class Node {
 	}
 
 	public Integer calculate() {
-		if (this.operator != null) {
-			switch (this.operator) {
-				case "+":
-					return this.left.calculate() + this.right.calculate();
-				case "*":
-					return this.left.calculate() * this.right.calculate();
-				default:
-					throw new RuntimeException("Unrecognized operator " + this.operator);
-			}
+		switch (this.operator) {
+			case "+":
+				return this.left.calculate() + this.right.calculate();
+			case "*":
+				return this.left.calculate() * this.right.calculate();
+			default:
+				throw new RuntimeException("Unrecognized operator " + this.operator);
 		}
-
-		return null;
 	}
 
 	@Override
 	public String toString() {
-		if (this.operator != null) {
-			switch (this.operator) {
-				case "+":
-					return "(" + this.left.toString() + " + " + this.right.toString()+")";
-				case "*":
-					return "(" + this.left.toString() + " * " + this.right.toString()+")";
-			}
+		switch (this.operator) {
+			case "+":
+				return "(" + this.left.toString() + " + " + this.right.toString() + ")";
+			case "*":
+				return "(" + this.left.toString() + " * " + this.right.toString() + ")";
 		}
-		
 		return null;
 	}
 
