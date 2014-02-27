@@ -6,7 +6,7 @@ package com.solairis.math.model;
  */
 public class Node {
 
-	private final Integer value;
+	protected final Integer value;
 	private final String operator;
 	private final Node left;
 	private final Node right;
@@ -28,8 +28,6 @@ public class Node {
 				default:
 					throw new RuntimeException("Unrecognized operator " + this.operator);
 			}
-		} else if (this.value != null) {
-			return this.value;
 		}
 
 		return null;
@@ -44,8 +42,6 @@ public class Node {
 				case "*":
 					return "(" + this.left.toString() + " * " + this.right.toString()+")";
 			}
-		} else if (this.value != null) {
-			return this.value.toString();
 		}
 		
 		return null;
