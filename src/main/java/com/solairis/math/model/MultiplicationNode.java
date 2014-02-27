@@ -8,7 +8,7 @@ package com.solairis.math.model;
 public class MultiplicationNode extends OperatorNode {
 
 	public MultiplicationNode(Node left, Node right) {
-		super(null, left, right);
+		super(left, right);
 	}
 
 	@Override

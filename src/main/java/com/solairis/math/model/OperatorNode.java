@@ -7,12 +7,10 @@ package com.solairis.math.model;
  */
 public abstract class OperatorNode implements Node {
 	
-	private final String operator;
 	protected final Node left;
 	protected final Node right;
 
-	public OperatorNode(String operator, Node left, Node right) {
-		this.operator = operator;
+	public OperatorNode(Node left, Node right) {
 		this.left = left;
 		this.right = right;
 	}
