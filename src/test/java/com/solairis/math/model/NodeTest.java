@@ -19,8 +19,7 @@ public class NodeTest {
 		//  1  *
 		//    / \
 		//    2  3
-		Node root = new OperatorNode(
-			"+",
+		Node root = new AdditionNode(
 			new ValueNode(1),
 			new OperatorNode(
 				"*",
