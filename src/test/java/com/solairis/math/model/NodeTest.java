@@ -12,7 +12,7 @@ public class NodeTest {
 	
 	@Test(expected = RuntimeException.class)
 	public void verify_RuntimeException_on_invalid_operator() {
-		Node node = new Node("blah", null, null);
+		Node node = new OperatorNode("blah", null, null);
 		Integer result = node.calculate();
 	}
 	
@@ -25,10 +25,10 @@ public class NodeTest {
 		//  1  *
 		//    / \
 		//    2  3
-		Node root = new Node(
+		Node root = new OperatorNode(
 			"+",
 			new ValueNode(1),
-			new Node(
+			new OperatorNode(
 				"*",
 				new ValueNode(2),
 				new ValueNode(3)
