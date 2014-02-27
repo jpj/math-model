@@ -8,8 +8,8 @@ package com.solairis.math.model;
 public class OperatorNode implements Node {
 	
 	private final String operator;
-	private final Node left;
-	private final Node right;
+	protected final Node left;
+	protected final Node right;
 
 	public OperatorNode(String operator, Node left, Node right) {
 		this.operator = operator;
@@ -20,8 +20,6 @@ public class OperatorNode implements Node {
 	@Override
 	public String toString() {
 		switch (this.operator) {
-			case "+":
-				return "(" + this.left.toString() + " + " + this.right.toString() + ")";
 			case "*":
 				return "(" + this.left.toString() + " * " + this.right.toString() + ")";
 		}
@@ -31,8 +29,6 @@ public class OperatorNode implements Node {
 	@Override
 	public Integer calculate() {
 		switch (this.operator) {
-			case "+":
-				return this.left.calculate() + this.right.calculate();
 			case "*":
 				return this.left.calculate() * this.right.calculate();
 			default:
