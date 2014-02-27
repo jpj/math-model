@@ -31,9 +31,8 @@ public abstract class OperatorNode implements Node {
 		switch (this.operator) {
 			case "*":
 				return this.left.calculate() * this.right.calculate();
-			default:
-				throw new RuntimeException("Unrecognized operator " + this.operator);
 		}
+		return null;
 	}
 	
 }
