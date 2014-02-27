@@ -21,8 +21,7 @@ public class NodeTest {
 		//    2  3
 		Node root = new AdditionNode(
 			new ValueNode(1),
-			new OperatorNode(
-				"*",
+			new MultiplicationNode(
 				new ValueNode(2),
 				new ValueNode(3)
 			)
