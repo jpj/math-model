@@ -10,12 +10,6 @@ import org.junit.Test;
  */
 public class NodeTest {
 	
-	@Test(expected = RuntimeException.class)
-	public void verify_RuntimeException_on_invalid_operator() {
-		Node node = new OperatorNode("blah", null, null);
-		Integer result = node.calculate();
-	}
-	
 	@Test
 	public void verify_original_examples_toString() {
 		// 1 + 2 * 3 --> (1 + (2 * 3))
